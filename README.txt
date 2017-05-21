@@ -1,0 +1,7 @@
+Homework #1 was about searching through a sequence of DNA and finding specific kmers within that sequence. We needed to find the kmer, as well as its reverse complement. So, if we were looking for "ACCG", we would need to search the entire sequence for "ACCG" on the positive strand, and "TAAC" on the negative. 
+
+Homework #2 was about finding the most common kmers within a sequence, as well as the most common kmers in the entire file. To do this, we needed to use two dictionaries, one that stored "global" information about the entire file, and another that reset for every sequence that we are currently evaluating.
+
+Homework #3 was about creating a distance matrix to best align two sequences. For instance, if we wanted to align "ACGGTT" and "AGTT", we could do "A-G-TT" or "A--GTT", and we could use a scoring matrix in order to determine which would be better to align. 
+
+The benchmarking folder is our final project, and I was in charge of creating the random DNA generator, as well as the benchmarking. We generated random data that simulated DNA by inserting our motifs (at a random chance) into our strand. We then go back over our strand and have the potential to overlap existing motifs. We did this in order to see if existing motif finders (such as MEME Suite) would be able to find these motifs. We can control the overlap rate, rate of insertion, and strand length. Therefore, we can see when motif finding algorithms struggle to detect them, and under what conditions.
